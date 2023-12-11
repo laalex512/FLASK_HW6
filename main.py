@@ -1,7 +1,5 @@
-from fastapi import FastAPI, Form, HTTPException, Request
-from fastapi.responses import HTMLResponse
+from fastapi import FastAPI
 import uvicorn
-from fastapi.templating import Jinja2Templates
 
 from routers import user, product, order
 from db import database

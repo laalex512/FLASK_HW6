@@ -29,11 +29,6 @@ async def get_users():
         users.c.lastname,
         users.c.email
     )
-    # result = []
-    # users_dict = dict(database.fetch_all(query))
-    # for user in users_dict:
-    #     result.append(user[id])
-    # print(result)
     return await database.fetch_all(query)
 
 
